@@ -1,0 +1,302 @@
+/* === ESTILOS GERAIS DO SITE === */
+
+body {
+  background-color: #282c34;
+  color: #f1f1f1;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+.main-header {
+  background-color: #20232a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #61dafb;
+}
+
+.main-header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.main-header nav a:hover {
+  color: #61dafb;
+}
+
+.logout-button {
+  background-color: #dc3545;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+  color: white;
+}
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #3c4049;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  border-bottom: 1px solid #555;
+  padding-bottom: 8px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  gap: 10px;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+input,
+select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #555;
+  color: white;
+  font-size: 1rem;
+}
+
+input[type="button"],
+button {
+  padding: 9px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="button"]:hover,
+button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #20232a;
+}
+
+td a {
+  color: #212529;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page-title,
+.page-subtitle {
+  text-align: center;
+}
+
+.page-title {
+  color: #61dafb;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.page-subtitle {
+  color: #ccc;
+  margin-bottom: 3rem;
+}
+
+.card-container {
+ display: grid; /* Usaremos Grid para um layout mais controlado */
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cria colunas que se ajustam ao tamanho da tela, com um mínimo de 250px e máximo de 1 fração do espaço */
+ gap: 20px; /* Espaçamento entre os cards */
+ text-align: center;
+}
+
+.info-card {
+ background-color: #282c34;
+ padding: 25px;
+ border-radius: 8px;
+ /* width: 22%; REMOVA ESTA LINHA */
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+ display: flex; /* Para alinhar o conteúdo interno */
+ flex-direction: column; /* Para alinhar o conteúdo internamente em coluna */
+ justify-content: space-between; /* Espaça o título e o parágrafo */
+}
+
+.info-card h3 {
+  border-bottom: none;
+  margin-top: 0;
+  color: #61dafb;
+  margin-bottom: 10px;
+  line-height: 1.3; /* <<< LINHA ADICIONADA */
+}
+
+.info-card p {
+  color: #b0b0b0;
+  font-size: 1rem; /* Aumentado para o tamanho padrão */
+}
+
+.info-card p {
+  color: #b0b0b0;
+}
+
+
+/* === ESTILOS DA PÁGINA DE LOGIN === */
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem; /* Espaçamento do topo */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-container {
+  background-color: #3c4049;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px; /* Largura máxima do card */
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #61dafb;
+}
+
+.login-container .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column; /* Coloca os itens um embaixo do outro */
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+/* BOTÃO "ENTRAR" ATUALIZADO */
+.login-container button {
+  width: auto; /* Ajusta a largura automaticamente */
+  padding: 10px 20px; /* Padding vertical e horizontal */
+  margin-top: 20px; /* Margem de cima */
+  font-size: 1.1rem; /* Tamanho da fonte */
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  align-self: center; /* Centraliza o botão no formulário flex */
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.login-message {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.btn-voltar {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 18px;
+  background-color: #6c757d; /* Um cinza elegante para ações secundárias */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-voltar:hover {
+  background-color: #5a6268; /* Um tom mais escuro ao passar o mouse */
+}
+
+.btn-acao {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 2px 4px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  color: white; /* Cor do texto padrão para os botões */
+}
+
+.btn-acao:hover {
+  opacity: 0.85;
+}
+
+.btn-pagamento {
+  background-color: #007bff; /* Azul */
+}
+
+.btn-alterar {
+  background-color: #ffc107; /* Amarelo */
+  color: #212529; /* Texto escuro para melhor contraste */
+}
+
+.btn-excluir {
+  background-color: #dc3545; /* Vermelho */
+}   
